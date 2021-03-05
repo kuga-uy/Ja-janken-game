@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Ja-Janken</title>
+	</head>
+	<body class="main_body">
+		<header class="header_container">
+			<h1>Ja - Janken Game</h1>
+			<div class="score_container">
+				<div class="player_score-container">
+					<h3 class="player_name">PLAYER</h3>
+					<h4 class="player_score">0</h4>
+				</div>
+
+				<div class="draws_container">
+					<h2>VS</h2>
+					<h3>DRAWS</h3>
+					<h2 class="draws_counter">0</h2>
+				</div>
+				<div class="cpu_score-container">
+					<h3 class="cpu_name">CPU</h3>
+					<h4 class="cpu_score">0</h4>
+				</div>
+			</div>
+		</header>
+		<form class="prompt_container">
+			<h3 class="prompt_heading">Insert your name</h3>
+			<input
+				class="name_input"
+				type="text"
+				placeholder="Your name"
+				maxlength="9"
+				minlength="1"
+			/>
+			<button class="play_button" type="submit">Play</button>
+		</form>
+		<section class="central_game">
+			<img
+				class="player_selected-hand"
+				src="assets/player-rock.png"
+				alt="rock-hand"
+			/>
+			<img
+				class="cpu_selected-hand"
+				src="assets/cpu-rock.png"
+				alt="rock-hand"
+			/>
+		</section>
+		<div class="winner_container"></div>
+		<aside class="player_option-hands">
+			<h3 class="options_heading">Choose One</h3>
+			<img
+				class="player_option"
+				id="rock"
+				alt="rock-hand"
+				src="assets/player-rock.png"
+			/>
+			<img
+				class="player_option"
+				id="paper"
+				alt="paper-hand"
+				src="assets/player-paper.png"
+			/>
+			<img
+				class="player_option"
+				id="scissors"
+				alt="scissors-hand"
+				src="assets/player-scissors.png"
+			/>
+			<form>
+				<button class="reset_button" type="submit">
+					Reset Game
+				</button>
+			</form>
+		</aside>
+
+		<script src="animation.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
