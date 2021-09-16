@@ -2,12 +2,13 @@
 const playerHand = document.querySelector(".player_selected-hand");
 const cpuHand = document.querySelector(".cpu_selected-hand");
 
-//3      RESET THE HANDS CHANGE TO USE IT AGAIN
+///3      RESET THE HANDS CHANGE TO USE IT AGAIN
 function resetHandChange() {
 	playerHand.src = "./assets/player-rock.png";
 	playerHand.style.animation = "none";
 	cpuHand.src = "./assets/cpu-rock.png";
 	cpuHand.style.animation = "none";
+	winnerContainer.style.display = "flex";
 }
 //2      CHANGE THE CENTRAL HANDS IMG
 
@@ -25,7 +26,6 @@ function cpuHandChange(cpuSelection) {
 /*player hand changer*/
 function playerHandChange(element) {
 	playerHand.src = element.target.src;
-
 	gameBeginning(element);
 	setTimeout(() => resetHandChange(element), 800);
 }
@@ -34,6 +34,5 @@ function playerHandChange(element) {
 const handsInitialAnimation = (element) => {
 	playerHand.style.animation = "hands_animation 1s ease";
 	cpuHand.style.animation = "hands_animation 1s ease";
-
 	setTimeout(() => playerHandChange(element), 800);
 };
