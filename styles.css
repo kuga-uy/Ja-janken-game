@@ -2,6 +2,7 @@ body {
   position: relative;
   padding: 0;
   margin: 0;
+  overflow: hidden;
   background-color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,7 +99,7 @@ body {
           justify-content: space-evenly;
   -ms-flex-line-pack: center;
       align-content: center;
-  top: 30px;
+  top: 0vh;
   height: 100px;
   width: 60%;
   margin-left: 20%;
@@ -138,7 +139,7 @@ aside > img:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 50vh;
+  top: 50%;
   left: calc(50% - 30vw);
   width: 60vw;
   height: 200px;
@@ -254,7 +255,7 @@ aside > img:hover {
 
 .reset_button {
   position: absolute;
-  right: -18vw;
+  right: 20px;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
