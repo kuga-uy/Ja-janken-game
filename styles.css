@@ -61,10 +61,8 @@ body {
   padding-left: 5%;
   padding-right: 5%;
   height: 20%;
-  margin-top: 30px;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,6 +73,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .central_game img {
@@ -99,7 +100,7 @@ body {
           justify-content: space-evenly;
   -ms-flex-line-pack: center;
       align-content: center;
-  top: 0vh;
+  top: -10vh;
   height: 100px;
   width: 60%;
   margin-left: 20%;
@@ -283,13 +284,18 @@ aside > img:hover {
     width: 60%;
   }
   .central_game {
-    height: 110px;
+    width: 200px;
+  }
+  .central_game img {
+    width: 50%;
+    height: 50%;
   }
   .reset_button {
     top: 25vh;
     left: 37%;
   }
   .player_option-hands {
+    top: 40px;
     height: 80px;
   }
 }
